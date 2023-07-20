@@ -310,7 +310,7 @@ document.getElementById('pausebtn').addEventListener('click', () => {
 document.getElementById('resetbtn').addEventListener('click', () => {
   clearInterval(sortingInterval);
   document.getElementById('startbtn').disabled = false;
-  pause = false;
+  pause = true;
   array = Array.from({ length: arraySize }, () => Math.floor(Math.random() * 100) + 1);
   createBars();
 });
